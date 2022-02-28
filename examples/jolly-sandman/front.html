@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>
+		The Jolly Sandman Hotel
+	</title>
+</head>
+<style>
+	body {
+		background-color: #ffecad;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#heading-section {
+		text-align: center;
+		margin-top: 2%;
+	}
+	#carousel {
+		text-align: center;
+	}
+</style>
+<body id="whole-page">
+	<div id="heading-section">
+		<h1> Welcome to the Jolly Sandman Hotel </h1>
+		<h2> The home of fun and frivolities </h2>
+	</div>
+	<div id="carousel">
+		<button type="button" onclick="leftButton()"><--</button>
+		<img src="room1.jpg" width="600px" height="400px">
+		<button type="button" onclick="rightButton()">--></button>
+	</div>
+	<div id="main-text">
+		<h3> About the Jolly Sandman</h3>
+		<p> The Jolly Sandman hotel was founded in 1893 by Louise Sanderson. The hotel has undergone many historic changes since then, including the addition of
+		indoor plumbing and air-conditioning.</p>
+		<h3> Our Rooms </h3>
+		<p> All of our rooms come with our famous "Bed Bug Free Gurantee" - if you find any bed bugs in your room, we will give you a $10 meal voucher for our in house
+		restaurant. Within your room you'll find beds made from genuine wood, and blankets made of genuine wool. </p>
+		<button type="button" onclick="biggerText()">Inrease Text Size</button>
+	</div>
+	
+<script>
+	var photo = 1;
+	console.log("yo");
+	function rightButton() {
+		if (photo === 1) {
+			document.getElementById("carousel").innerHTML ='<button type="button" onclick="leftButton()"><--</button> <img src="room2.jpg" width="600px" height="400px"><button type="button" onclick="rightButton()"> --> </button>';
+			photo = 2;
+		}else if (photo === 2) {
+			document.getElementById("carousel").innerHTML ='<button type="button" onclick="leftButton()"><--</button> <img src="room3.jpg" width="600px" height="400px"><button type="button" onclick="rightButton()"> --> </button>';
+			photo = 3;
+		}else if (photo === 3) {
+			document.getElementById("carousel").innerHTML ='<button type="button" onclick="leftButton()"><--</button> <img src="room1.jpg" width="600px" height="400px"><button type="button" onclick="rightButton()"> --> </button>';
+			photo = 1;
+		}
+	}
+	function leftButton() {
+		if (photo === 1) {
+			document.getElementById("carousel").innerHTML ='<button type="button" onclick="leftButton()"><--</button> <img src="room3.jpg" width="600px" height="400px"><button type="button" onclick="rightButton()"> --> </button>';
+			photo = 3;
+		}else if (photo === 2) {
+			document.getElementById("carousel").innerHTML ='<button type="button" onclick="leftButton()"><--</button> <img src="room1.jpg" width="600px" height="400px"><button type="button" onclick="rightButton()"> --> </button>';
+			photo = 1;
+		}else if (photo === 3) {
+			document.getElementById("carousel").innerHTML ='<button type="button" onclick="leftButton()"><--</button> <img src="room2.jpg" width="600px" height="400px"><button type="button" onclick="rightButton()"> --> </button>';
+			photo = 2;
+		}
+	}
+	function biggerText() {
+		document.getElementById("whole-page").style.fontSize = "50px";
+	}
+</script>
+
+
+</body>
+
+</html>
+
+
