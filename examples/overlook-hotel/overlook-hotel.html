@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>
+		The Overlook Hotel
+	</title>
+	<style>
+		body {
+			background-color: #a9c9fc;
+			padding: 3% 10% 0% 10%;
+			text-align: center;
+		}
+		h1 {
+			font-size: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div id="heading-section">
+		<h1> The Overlook Hotel </h1>
+		<h2> The best hotel you will ever visit </h2>
+	</div>
+	<div id="main-photo">
+		<img src="room1.jpg" width="400px" height="300px">
+	</div>
+	<div id="first-text">
+		<p> Nestled in the Rocky Mountains in scenic Colorado, our hotel has been a holiday spot since the early 1900s when it was
+			a resort destination for people suffering from Tubercolosis. Nowadays you don't need to be sick to come here, in fact
+			given the current pandemic we'd prefer it if you weren't sick.</p>
+	</div>
+	<div id="second-text">
+		<p> Our hotel features many amazing amenities like bathrooms, beds and closets. Even in the coldest winter you'll stay
+		warm thanks to our new boiler, and fear not our restaurant has lots of delicious food.</p>
+	</div>
+<script>
+	setTimeout( function () {
+		document.getElementById("second-text").innerHTML = '<p> GET OUT </p>';
+	}, 6000);
+	setTimeout( function () {
+		document.getElementById("heading-section").innerHTML = '<div id="heading-section"> <h1> The Overlook Hotel </h1> <h2> The last hotel you will ever visit </h2> 	</div>';
+	}, 8000);
+	setTimeout( function () {
+		document.getElementById("main-photo").innerHTML = '<img src="ghost.jpg" width="400px" height="300px">';
+	}, 10000);
+	setTimeout( function () {
+		document.getElementById("second-text").innerHTML = '<p style="font-size: 50px; color: red;"> GET OUT </p>';
+	}, 12000);
+	setTimeout( function () {
+		document.getElementById("first-text").innerHTML = '<h1 style="color: red;"> GET OUT !!!</p>';
+	}, 14000);
+
+
+
+	
+
+</script>
+
+
+</body>
+
+</html>
+
+
