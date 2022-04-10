@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title> Muffin Masher </title>
+</head>
+<body>
+	<h1 id="muffin-title" style="text-align: center; padding-top: 20%; font-size: 80px;"> Plain Muffins</h1>
+</body>
+
+<script>
+	function generateMuffinIdea(){
+		let flavours1 = ["Chocolate", "Milk Chocolate", "White Chocolate", "Dark Chocolate", "Caramel", "Maple Syrup", "Golden Syrup", "Honey", "Hokey-Pokey", "Honeycomb", "Choc-Chip"]
+		let flavours2 = ["Apple", "Pear", "Blueberry", "Raspberry", "Strawberry", "Loganberry", "Boysenberry", "Blackberries", "Banana", "Mango", "Lemon", "Orange", "Lime", "Apricot", "Peach", "Plum", "Cherry", "Honeydew", "Date", "Sultana", "Coconut", "Pomegranate", "Guava", "Fig"];
+		let flavours3 = ["Ham", "Cheese", "Bacon", "Feta", "Chicken", "Salami", "Zucchini", "Pumpkin", "Carrot", "Tomato"];
+		let flavours4 = ["Walnut", "Peanut Butter", "Cashew", "Pistachio"];
+		let flavours5 = ["Ginger", "Cinnamon", "Sour Cream", "Yoghurt", "Coffee", "Rosemary", "Lavendar", "Horopito", "Nutmeg"];
+		let allFlavours = flavours1.concat(flavours2.concat(flavours3.concat(flavours4.concat(flavours5))))
+		thing1 = allFlavours[Math.floor(Math.random()*allFlavours.length)];
+		thing2 = allFlavours[Math.floor(Math.random()*allFlavours.length)];
+		let thisMuffin = thing1 + " & " + thing2 + " Muffins";
+		return thisMuffin;
+	}
+	function changeHeading(){
+		muffin = generateMuffinIdea();
+		document.getElementById("muffin-title").innerHTML = generateMuffinIdea();
+	}
+	changeHeading();
+</script>
+
+</html>
