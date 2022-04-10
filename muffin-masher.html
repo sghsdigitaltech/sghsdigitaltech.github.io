@@ -2,17 +2,28 @@
 <head>
 	<title> Muffin Masher </title>
 </head>
+
+<style>
+	body {
+		background-color: white;
+		color: black;
+		 font-size: 80px;
+		 text-align: center;
+	}
+</style>
+
+
 <body>
-	<h1 id="muffin-title" style="text-align: center; padding-top: 20%; font-size: 80px;"> Plain Muffins</h1>
+	<h1 id="muffin-title" style="padding-top: 20%;"> Plain Muffins</h1>
 </body>
 
 <script>
 	function generateMuffinIdea(){
-		let flavours1 = ["Chocolate", "Milk Chocolate", "White Chocolate", "Dark Chocolate", "Caramel", "Maple Syrup", "Golden Syrup", "Honey", "Hokey-Pokey", "Honeycomb", "Choc-Chip"]
-		let flavours2 = ["Apple", "Pear", "Blueberry", "Raspberry", "Strawberry", "Loganberry", "Boysenberry", "Blackberries", "Banana", "Mango", "Lemon", "Orange", "Lime", "Apricot", "Peach", "Plum", "Cherry", "Honeydew", "Date", "Sultana", "Coconut", "Pomegranate", "Guava", "Fig"];
-		let flavours3 = ["Ham", "Cheese", "Bacon", "Feta", "Chicken", "Salami", "Zucchini", "Pumpkin", "Carrot", "Tomato"];
-		let flavours4 = ["Walnut", "Peanut Butter", "Cashew", "Pistachio"];
-		let flavours5 = ["Ginger", "Cinnamon", "Sour Cream", "Yoghurt", "Coffee", "Rosemary", "Lavendar", "Horopito", "Nutmeg"];
+		let flavours1 = ["Chocolate", "Milk Chocolate", "White Chocolate", "Dark Chocolate", "Caramel", "Maple Syrup", "Golden Syrup", "Honey", "Hokey-Pokey", "Honeycomb", "Choc-Chip", "Salted Caramel", "Fudge", "Jaffa", "Jam", "Lemonade", "Cola", "Ice-Cream", "Rocky-Road", "Toffee", "Sour Candy", "Vanilla", "Oreo", "Malteaser", "M&M"]
+		let flavours2 = ["Apple", "Pear", "Blueberry", "Raspberry", "Strawberry", "Loganberry", "Boysenberry", "Blackberries", "Banana", "Mango", "Lemon", "Orange", "Lime", "Apricot", "Peach", "Plum", "Cherry", "Honeydew", "Date", "Sultana", "Feijoa", "Coconut", "Pomegranate", "Guava", "Fig", "Passionfruit", "Rhubarb", "Prune"];
+		let flavours3 = ["Ham", "Cheese", "Bacon", "Feta", "Chicken", "Salami", "Zucchini", "Pumpkin", "Carrot", "Tomato", "Corn", "Kumara", "Olive", "Tofu", "Fish", "Potato", "Avocado", "Bran", "Pesto", "Camembert", "Mint", "Rose"];
+		let flavours4 = ["Walnut", "Peanut Butter", "Cashew", "Pistachio", "Almond", "Macademia", "Poppy", "Sunflower", "Sesame"];
+		let flavours5 = ["Ginger", "Cinnamon", "Sour Cream", "Yoghurt", "Coffee", "Rosemary", "Lavendar", "Horopito", "Nutmeg", "ANZAC", "Wholemeal", "Black Forest", "Chilli", "Gingerbread", "Pizza", "Hot Cross", "Cappuccino"];
 		let allFlavours = flavours1.concat(flavours2.concat(flavours3.concat(flavours4.concat(flavours5))))
 		thing1 = allFlavours[Math.floor(Math.random()*allFlavours.length)];
 		thing2 = allFlavours[Math.floor(Math.random()*allFlavours.length)];
