@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kiwi Kingdom</title>
+	<meta name='author' content='Author'>
+	<meta name='description' content='Kiwi Kingdom website'>
+	<meta name='keywords' content='kiwi, kingdom, nz, new zealand, theme park'>
+	<link rel='stylesheet' href='kiwi-style.css'>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bungee&display=swap" rel="stylesheet">
+	
+	<style>
+	img {
+		width: 400px;
+		height: 296px;
+		float: left;
+	}
+	</style>
+	
+  </head>
+  
+  <body>
+  
+	<div id='navbar'>
+	  <button type='button' onClick='location.href ="home.html"'>Home</button>
+	  <button type='button' onClick='location.href ="prices.html"'>Prices, Deals & Offers</button>
+	</div>
+	
+	<div id='top-parallax'>
+	  <div class='title'><h1 style='font-size:100px;'>Rides & Activities</h1></div>
+	</div>
+	
+	<div id='rides'>
+	
+	  <div id='haunted-house'>
+	  
+		<div class='box'>
+		  <h3>Haunted House</h3>
+	  	  <p>The Haunted House is a spooky roller coaster featuring twists, turns, and sudden drops. The entire ride is in 
+		  pitch black so you never know what’s coming next. Perfect for 12+ who like thrilling rides.</p>
+	    </div>
+		
+		<div class='box' id='hh-gallery'>
+		  <button type='button' onClick='hhLeftButton()' class='rides-button'>
+		  ←
+		  </button>
+		  <img src='hh-1.jpg' alt='outside view of the haunted house.'>
+		  <button type='button' onClick='hhRightButton()' class='rides-button'>
+		  →
+		  </button>
+		</div>
+		
+	  </div>
+	  
+	  <hr>
+	  
+	  <div id='merry-go-round'>
+	  
+	    <div class='box' id='mgr-gallery'>
+		  <button type='button' onClick='mgrLeftButton()' class='rides-button'>
+		  ←
+		  </button>
+		  <img src='mgr-1.jpg' alt='a carousel and a ferris wheel.'>
+		  <button type='button' onClick='mgrRightButton()' class='rides-button'>
+		  →
+		  </button>
+		</div>
+		
+		<div class='box'>
+		  <h3>Merry Go Round</h3>
+		  <p>Ride a fake horse around in circles for 5 minutes. What a fun activity! The horse moves slowly up and down, and there’s carnival music 
+		  playing in the background. Perfect for 4+ or with a parent.</p>
+	    </div>
+		
+	  </div>
+	  
+	  <hr>
+	  
+	  <div id='kevins-kitchen'>
+	  
+	    <div class='box'>
+		  <h3>Kevin's Kitchen</h3>
+		  <p>In this entertaining show our mascot Kevin the Kiwi will teach you how to cook kiwi food like pavlova, cheese rolls, and fish and chips. 
+		  Yum! It’s educational and entertaining. Perfect for all ages.</p>
+		</div>
+		
+		<div class='box' id='kevin-gallery'>
+		  <button type='button' onclick='kevLeftButton()' class='rides-button'>
+		  ←
+		  </button>
+		  <img src='kev-1.jpg' alt='dough on top of dough next to a rolling pin.'>
+		  <button type='button' onclick="kevRightButton()" class='rides-button'>
+		  →
+		  </button>
+		</div>
+		
+	  </div>
+	  
+	  <div>
+	    <p>
+		<a href="http://jigsaw.w3.org/css-validator/check/Referer">
+		<img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss"
+        alt="Valid CSS!" />
+		</a>
+		</p>
+	  </div>
+	</div>
+	
+	<script>
+		var kevPic = 1;
+			function kevRightButton(){
+			if (kevPic === 1) {
+				document.getElementById("kevin-gallery")
+				.innerHTML =
+				"<button type='button' onclick='kevLeftButton()' class='rides-button'> <-- </button><img src='kev-2.jpg' alt='picture of pavlova'><button type='button' onclick='kevRightButton()' class='rides-button'> --> </button>";
+				kevPic = 2;
+				}else if (kevPic === 2) {
+					document.getElementById("kevin-gallery")
+					.innerHTML =
+					"<button type='button' onclick='kevLeftButton()' class='rides-button'> <-- </button><img src='kev-3.jpg' alt='fancy fish and chips'><button type='button' onclick='kevRightButton()' class='rides-button'> --> </button>";
+					kevPic = 3;
+				}else if (kevPic === 3) {
+					document.getElementById("kevin-gallery")
+					.innerHTML =
+					"<button type='button' onclick='kevLeftButton()' class='rides-button'> <-- </button><img src='kev-1.jpg' alt='dough on top of dough next to a rolling pin.'><button type='button' onclick='kevRightButton()' class='rides-button'> --> </button>";
+					kevPic = 1;
+				}
+			}
+			function kevLeftButton(){
+			if (kevPic === 1) {
+				document.getElementById("kevin-gallery")
+				.innerHTML =
+				"<button type='button' onclick='kevLeftButton()' class='rides-button'> <-- </button><img src='kev-3.jpg' alt='fancy fish and chips'><button type='button' onclick='kevRightButton()' class='rides-button'> --> </button>";
+				kevPic = 3;
+				}else if (kevPic === 3) {
+					document.getElementById("kevin-gallery")
+					.innerHTML =
+					"<button type='button' onclick='kevLeftButton()' class='rides-button'> <-- </button><img src='kev-2.jpg' alt='picture of pavlova'><button type='button' onclick='kevRightButton()' class='rides-button'> --> </button>";
+					kevPic = 2;
+				}else if (kevPic === 2) {
+					document.getElementById("kevin-gallery")
+					.innerHTML =
+					"<button type='button' onclick='kevLeftButton()' class='rides-button'> <-- </button><img src='kev-1.jpg' alt='dough on top of dough next to a rolling pin.'><button type='button' onclick='kevRightButton()' class='rides-button'> --> </button>";
+					kevPic = 1;
+				}
+			}
+		var mgrPic = 1;
+			function mgrRightButton(){
+			if (mgrPic === 1) {
+				document.getElementById("mgr-gallery")
+				.innerHTML =
+				"<button type='button' onclick='mgrLeftButton()' class='rides-button'> <-- </button><img src='mgr-2.jpg' alt='a carousel.'><button type='button' onclick='mgrRightButton()' class='rides-button'> --> </button>";
+				mgrPic = 2;
+				}else if (mgrPic === 2) {
+					document.getElementById("mgr-gallery")
+					.innerHTML =
+					"<button type='button' onclick='mgrLeftButton()' class='rides-button'> <-- </button><img src='mgr-3.jpg' alt='close up of the horses on the carousel.'><button type='button' onclick='mgrRightButton()' class='rides-button'> --> </button>";
+					mgrPic = 3;
+				}else if (mgrPic === 3) {
+					document.getElementById("mgr-gallery")
+					.innerHTML =
+					"<button type='button' onclick='mgrLeftButton()' class='rides-button'> <-- </button><img src='mgr-1.jpg' alt='a carousel and a ferris wheel.'><button type='button' onclick='mgrRightButton()' class='rides-button'> --> </button>";
+					mgrPic = 1;
+				}
+			}
+			function mgrLeftButton(){
+			if (mgrPic === 1) {
+				document.getElementById("mgr-gallery")
+				.innerHTML =
+				"<button type='button' onclick='mgrLeftButton()' class='rides-button'> <-- </button><img src='mgr-3.jpg' alt='close up of the horses on the carousel.'><button type='button' onclick='mgrRightButton()' class='rides-button'> --> </button>";
+				mgrPic = 3;
+				}else if (mgrPic === 3) {
+					document.getElementById("mgr-gallery")
+					.innerHTML =
+					"<button type='button' onclick='mgrLeftButton()' class='rides-button'> <-- </button><img src='mgr-2.jpg' alt='a carousel.'><button type='button' onclick='mgrRightButton()' class='rides-button'> --> </button>";
+					mgrPic = 2;
+				}else if (mgrPic === 2) {
+					document.getElementById("mgr-gallery")
+					.innerHTML =
+					"<button type='button' onclick='mgrLeftButton()' class='rides-button'> <-- </button><img src='mgr-1.jpg' alt='a carousel and a ferris wheel.'><button type='button' onclick='mgrRightButton()' class='rides-button'> --> </button>";
+					mgrPic = 1;
+				}
+			}
+		var hhPic = 1;
+			function hhRightButton(){
+			if (hhPic === 1) {
+				document.getElementById("hh-gallery")
+				.innerHTML =
+				"<button type='button' onclick='hhRightButton()' class='rides-button'> <-- </button><img src='hh-2.jpg' alt='second outside view of the haunted house.'><button type='button' onclick='hhRightButton()' class='rides-button'> --> </button>";
+				hhPic = 2;
+				}else if (hhPic === 2) {
+					document.getElementById("hh-gallery")
+					.innerHTML =
+					"<button type='button' onclick='hhRightButton()' class='rides-button'> <-- </button><img src='hh-3.jpg' alt='inside view of the haunted house.'><button type='button' onclick='hhRightButton()' class='rides-button'> --> </button>";
+					hhPic = 3;
+				}else if (hhPic === 3) {
+					document.getElementById("hh-gallery")
+					.innerHTML =
+					"<button type='button' onclick='hhRightButton()' class='rides-button'> <-- </button><img src='hh-1.jpg' alt='outside view of the haunted house.'><button type='button' onclick='hhRightButton()' class='rides-button'> --> </button>";
+					hhPic = 1;
+				}
+			}
+			function hhLeftButton(){
+			if (hhPic === 1) {
+				document.getElementById("hh-gallery")
+				.innerHTML =
+				"<button type='button' onclick='hhLeftButton()' class='rides-button'> <-- </button><img src='hh-3.jpg' alt='inside view of the haunted house.'><button type='button' onclick='hhLeftButton()' class='rides-button'> --> </button>";
+				hhPic = 3;
+				}else if (hhPic === 3) {
+					document.getElementById("hh-gallery")
+					.innerHTML =
+					"<button type='button' onclick='hhLeftButton()' class='rides-button'> <-- </button><img src='hh-2.jpg' alt='second outside view of the haunted house.'><button type='button' onclick='hhLeftButton()' class='rides-button'> --> </button>";
+					hhPic = 2;
+				}else if (hhPic === 2) {
+					document.getElementById("hh-gallery")
+					.innerHTML =
+					"<button type='button' onclick='hhLeftButton()' class='rides-button'> <-- </button><img src='hh-1.jpg' alt='outside view of the haunted house.'><button type='button' onclick='hhLeftButton()' class='rides-button'> --> </button>";
+					hhPic = 1;
+				}
+			}
+	</script>
+	
+  </body>
+  
+</html>

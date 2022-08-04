@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+	
+	body {
+		margin: 0;
+	}
+	
+	.background-section {
+
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.covering-section {
+		min-height: 300px;
+		background-color: ;
+		padding: 0;
+	}
+	
+	.heading1 {
+		position: absolute;
+		top: 20%;
+		left: 35%;
+		font-size: 110px;
+		color: white;
+		text-decoration: underline;
+		outline: 5px dashed #196600;
+		text-shadow: 4px 4px #549431;
+	}
+	
+	.heading2 {
+		position: absolute;
+		top: 20%;
+		left: 35%;
+		font-size: 120px;
+		color: CECECE;
+		text-decoration: underline;
+		outline: 5px dashed #196600;
+		text-shadow: 4px 4px #549431;
+	}
+	
+	.heading3 {
+		position: absolute;
+		top: 20%;
+		left: 35%;
+		font-size: 120px;
+		color: white;
+		text-decoration: underline;
+		outline: 5px dashed #196600;
+		text-shadow: 4px 4px #549431;
+	}
+	
+	.icon {
+		float: left;
+		padding-left: 40px;
+		padding-top: 10px;
+	}
+		
+	.link_button {
+		background-color: 196600;
+		color: 5c0709;
+		width: 33.33%;
+		float: left;
+		font-size: 30px;
+		text-align: center;
+		font-family: 'Quicksand';
+	}
+	
+	/* unvisited link */
+	a:link {
+		color: white;
+	}
+
+	/* visited link */
+	a:visited {
+		color: white;
+	}
+
+	/* mouse over link */
+	a:hover {
+		color: white;
+	}	
+
+	/* selected link */
+	a:active {
+		color: white;
+	}
+		
+	#links {
+		float: left;
+		width: 100%;
+		height: 5%;
+		background-color: 609732;
+		position: fixed;
+	}
+	
+	#first-photo {
+		float: left;
+		width: 100%;
+		height: 80%;
+		background-color: 609732;
+	}
+	
+	#rides-first-photo {
+		float: left;
+		width: 100%;
+		height: 80%;
+		background-color: 609732;
+	}
+	
+	#heading-text {
+		float: left;
+		width: 100%;
+		height: 30%;
+		background-color: 609732;
+	}
+	
+	#carousel {
+		float: left;
+		width: 100%;
+		height: 70%;
+		background-color: 609732;
+		
+	}
+	
+	#main-text {
+		float: left;
+		width: 100%;
+		height: 30%;
+		background-color: 609732;
+	}
+	
+	#side-by-side {
+		float: left;
+		width: 100%;
+		height: 63%;
+	}
+	
+	#left-side {
+		float: left;
+		width: 50%;
+		height: 100%;
+		background-color: 609732;
+		background-image: url('reviews.jpg');
+	}
+	
+	#right-side {
+		float: right;
+		width: 50%;
+		height: 100%;
+		background-color: 8abd5f;
+	}
+	
+	#second-photo {
+		float: left;
+		width: 100%;
+		height: 40%;
+		background-color: 609732;
+		background-image: url('bottomfront.jpg');
+	}
+	
+	#deals-picture1 {
+		float: left;
+		width: 100%;
+		height: 70%;
+		background-color: 609732;
+	}
+	
+	#contact {
+		float: left;
+		width: 100%;
+		height: 20%;
+		background-color: 114600;
+		padding-bottom: 30px;
+	}
+	
+	h1 {
+		font-family: 'Ramaraja';
+		text-align: center;
+		font-size: 90px;
+		color: 196600;
+		padding-right: 110px;
+		text-shadow: 4px 4px white;
+	}
+	
+	h2 {
+		font-family: 'Quicksand';
+		font-size: 43px;
+		text-align: center;
+		color: eabab4;
+	}
+	
+	h3 {
+		font-family: 'Quicksand';
+		font-size: 22px;
+		text-align: center;
+		color: eabab4;
+	}
+	
+	p {
+		color: eabab4;
+	}
+	
+	li {
+		font-family: 'Quicksand';
+		font-size: 27px;
+		color: eabab4;
+	}

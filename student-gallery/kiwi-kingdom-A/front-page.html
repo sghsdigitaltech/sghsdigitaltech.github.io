@@ -1,0 +1,110 @@
+<html>
+<head> 
+	<title> Kiwi Kingdom </title>
+	<link rel="icon" href="images/kiwi.png"> 
+	<link rel="stylesheet" type="text/css" href="themepark.css">
+	<style>
+
+	.button {
+		  background-color: navy;
+		  border: none;
+		  color: white;
+		  padding: 10px 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 25px;
+		}	 
+	</style>
+</head>
+
+<body>
+
+	<div id="links" style="background-color:#001d8f;">
+			<div id="link1"> <a href="rides.html"> Our Rides </a> </div>
+			<div id="link2"> <a href="prices.html"> Our Prices and Deals </a> </div>
+	</div>
+
+	<div class="background-section" style="background-image: url('images/background-image.jpg');  min-height: 550px;" alt="A picture of a roller coaster from the themepark. This is the background.">
+			<div class="fheading"> KIWI KINGDOM </div>
+	</div>
+
+	<div id="blurb">
+		<div style="padding-left: 15%; padding-right: 15%;">
+			<br>
+			<h2> WELCOME TO KIWI KINGDOM </h2>
+			<p style="color:#001d8f;">Kiwi Kingdom is New Zealand’s best theme park, giving you a mix of thrilling rides, entertaining shows, 
+			and lots of fun activities to do with your family and friends. We hope you enjoy your time here! </p>
+		</div>
+	</div>
+
+	<div class="background-section" style="background-image: url('images/background-image.jpg');  min-height: 550px;">
+	</div>
+
+	<div id="gallery">
+		<h2 style="color:#001d8f;"> Photo Gallery </h2>
+		<button type="button" onclick="leftButton()" class="button"> < </button>
+		<img src="images/bumper-cars.jpg" width="600px" height="400px" alt="A picture of bumper cars.">
+		<button type="button" onclick="rightButton()" class="button"> > </button>
+	</div>
+
+	<!--- This allows the user to scroll through the photo gallery using the buttons --->
+
+	<script>
+		var photo =1;
+		function rightButton() {
+			if (photo === 1) {
+				document.getElementById("gallery").innerHTML='<h2 style="color:#001d8f;"> Photo Gallery </h2><button type="button" onclick="leftButton()" class="button"> < </button> <img src="images/ferris-wheel.jpg" width="600px" height="400px" alt="A picture of the ferris wheel."> <button type ="button" onclick="rightButton()" class="button"> > </button>';
+				photo = 2;
+			}else if (photo === 2) {
+				document.getElementById("gallery").innerHTML='<h2 style="color:#001d8f;"> Photo Gallery </h2><button type="button" onclick="leftButton()" class="button"> < </button> <img src="images/full-photo.jpg" width="600px" height="400px" alt="A landscape picture of the themepark from inside."> <button type ="button" onclick="rightButton()" class="button"> > </button>';
+				photo = 3;
+			}else if (photo === 3) {
+				document.getElementById("gallery").innerHTML='<h2 style="color:#001d8f;"> Photo Gallery </h2><button type="button" onclick="leftButton()" class="button"> < </button> <img src="images/ride.jpg" width="600px" height="400px" alt="A picture of one of the rides in the air."> <button type ="button" onclick="rightButton()" class="button"> > </button>';
+				photo = 4;
+			}else if (photo === 4) {
+				document.getElementById("gallery").innerHTML='<h2 style="color:#001d8f;"> Photo Gallery </h2><button type="button" onclick="leftButton()" class="button"> < </button> <img src="images/spin.jpg" width="600px" height="400px" alt="A picture of ride mid-spin."> <button type ="button" onclick="rightButton()" class="button"> > </button>';	
+				photo =  5;
+			}else if (photo === 5) {
+				document.getElementById("gallery").innerHTML='<h2 style="color:#001d8f;"> Photo Gallery </h2><button type="button" onclick="leftButton()" class="button"> < </button> <img src="images/bumper-cars.jpg" width="600px" height="400px" alt="A picture of bumper cars."> <button type ="button" onclick="rightButton()" class="button"> > </button>';
+				photo =  1;
+			}
+		}
+		function leftButton() {
+			if (photo === 1) {
+				document.getElementById("gallery").innerHTML='<h2 style="color:#001d8f;"> Photo Gallery </h2><button type="button" onclick="leftButton()" class="button"> < </button> <img src="images/spin.jpg" width="600px" height="400px" alt="A picture of ride mid-spin."> <button type ="button" onclick="rightButton()" class="button"> > </button>';
+				photo = 5;
+			}else if (photo === 2) {
+				document.getElementById("gallery").innerHTML='<h2 style="color:#001d8f;"> Photo Gallery </h2><button type="button" onclick="leftButton()" class="button"> < </button> <img src="images/bumper-cars.jpg" width="600px" height="400px" alt="A picture of bumper cars."> <button type ="button" onclick="rightButton()" class="button"> > </button>';
+				photo = 1;
+			}else if (photo === 3) {
+				document.getElementById("gallery").innerHTML='<h2 style="color:#001d8f;"> Photo Gallery </h2><button type="button" onclick="leftButton()" class="button"> < </button> <img src="images/ferris-wheel.jpg" width="600px" height="400px" alt="A picture of the ferris wheel."> <button type ="button" onclick="rightButton()" class="button"> > </button>';
+				photo =  2;
+			}else if (photo === 4) {
+				document.getElementById("gallery").innerHTML='<h2 style="color:#001d8f;"> Photo Gallery </h2><button type="button" onclick="leftButton()" class="button"> < </button> <img src="images/full-photo.jpg" width="600px" height="400px" alt="A landscape picture of the themepark from inside."> <button type ="button" onclick="rightButton()" class="button"> > </button>';
+				photo =  3;
+			}else if (photo === 5) {
+				document.getElementById("gallery").innerHTML='<h2 style="color:#001d8f;"> Photo Gallery </h2><button type="button" onclick="leftButton()" class="button"> < </button> <img src="images/ride.jpg" width="600px" height="400px"> <button type ="button" onclick="rightButton()" class="button"> > </button>';
+				photo =  4;
+			}
+		}
+	</script>
+
+	<div class="background-section" style="background-image: url('images/background-image.jpg');  min-height: 550px;">
+	</div>
+
+	<div id="reviews">
+		<div style="padding-left: 15%; padding-right: 15%;">
+		<h2 style="color: #f545a6";> Why should you come to Kiwi Kingdom? Here’s some reviews from our guests: </h2>
+		<p style="color: #f545a6";> Jacky: “I love going on the Haunted House ride, nothing like a good scare to help you remember you’re alive”☆☆☆☆☆</p>
+		<p style="color: #f545a6";> Simon: “I proposed to my wife at Kiwi Kingdom and she said yes!”☆☆☆☆ </p>
+		<p style="color: #f545a6";> Bill: “It’s better than watching TV” ☆☆</p> 
+		</div>
+	</div>
+
+	<div class="background-section" style="background-image: url('images/background-image.jpg');  min-height: 550px;">
+	</div>
+
+</body>
+
+</html>

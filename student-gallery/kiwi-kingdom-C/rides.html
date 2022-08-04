@@ -1,0 +1,100 @@
+<html>
+<head>
+	<title> Rides | Kiwi Kingdom </title>
+	<meta name="author" content="student">
+	<meta name="description" content="A Website to promote a theme park; showing users the rides">
+	<meta name="keywords" content="kiwi, kiwikingdom, theme, park, themepark">
+	<link rel="icon" href="kiwi-icon.png">
+	<link rel="stylesheet" href="themepark.css">
+</head>
+
+<body>
+	<div id="links">
+		<div id="link1" class="link_button"> <a href="front.html"> Home </a> </div>
+		<div id="link2" class="link_button"> <a href="rides.html"> Rides </a> </div>
+		<div id="link3" class="link_button"> <a href="prices.html"> Prices & Deals </a> </div>
+	</div>
+	
+	<div id="rides-first-photo" class="background-section" style="background-image: url('topridespage.jpg');  min-height: 650px;">
+		<div class="heading2"> Rides & Events </div>
+	</div>
+	
+	<div id="heading-text">
+	<img src="kiwi-icon.png" class="icon" width=200px height=200px>
+		<h1> Haunted House </h1>
+	</div>
+	
+	<div id="carousel_1">
+		<img src="hauntedride.jpg" width="1423px" height="550px">
+	</div>
+	
+	<div id="main-text">
+		<h2> The Haunted House is a spooky roller coaster featuring twists, turns, and sudden drops. The entire ride is in pitch black so you 
+		never know what’s coming next. Perfect for 12+ who like thrilling rides. </h2>
+	</div>
+	
+	<div id="second-photo" class="background-section">
+	</div>
+	
+	<div id="heading-text">
+	<img src="kiwi-icon.png" class="icon" width=200px height=200px>
+		<h1> Merry Go Round </h1>
+	</div>
+	
+	<div id="carousel_2">
+		<img src="merry-go-roundride.jpg" width="1423px" height="550px">
+	</div>
+	
+	<div id="main-text">
+		<h2> Ride a fake horse around in circles for 5 minutes. What a fun activity! The horse moves slowly up and down, and there’s carnival music playing 
+		in the background. Perfect for 4+ or with a parent. </h2>
+	</div>
+	
+	<div id="second-photo" class="background-section">
+	</div>
+	
+	<div id="heading-text">
+	<img src="kiwi-icon.png" class="icon" width=200px height=200px>
+		<h1> Kevin's Kitchen </h1>
+	</div>
+	
+	<div id="carousel_3">
+		<img src="kevinskitchen1.jpg" width="1423px" height="550px">
+	</div>
+	
+	<div id="main-text">
+		<h2> In this entertaining show our mascot Kevin the Kiwi will teach you how to cook kiwi food like pavlova, cheese rolls, and fish and chips. 
+		Yum! It’s educational and entertaining. Perfect for all ages. </h2>
+	</div>
+	
+	<div id="second-photo" class="background-section">
+	</div>
+	
+	<div id="contact">
+		<h2> Contact us on phone: 0272238248 | Contact us by email: kiwikingdom@gmail.com | Come visit us: 837 Red Cardinal Rd <h2>
+	</div>
+
+<script>
+	setTimeout( function () {
+		document.getElementById("carousel_1").innerHTML = '<img src="hauntedride2.jpg" width="1423px" height="550px">';
+	}, 6000);
+	setTimeout( function () {
+		document.getElementById("carousel_1").innerHTML = '<img src="hauntedride3.jpg" width="1423px" height="550px">';
+	}, 12000);
+	
+	setTimeout( function () {
+		document.getElementById("carousel_2").innerHTML = '<img src="merry-go-roundride2.jpg" width="1423px" height="550px">';
+	}, 18000);
+	setTimeout( function () {
+		document.getElementById("carousel_2").innerHTML = '<img src="merry-go-round3.jpg" width="1423px" height="550px">';
+	}, 24000);
+	
+	setTimeout( function () {
+		document.getElementById("carousel_3").innerHTML = '<img src="kevinskitchen2.jpg" width="1423px" height="550px">';
+	}, 30000);
+	setTimeout( function () {
+		document.getElementById("carousel_3").innerHTML = '<img src="kevinskitchen3.jpg" width="1423px" height="550px">';
+	}, 36000);
+</script>
+</body>
+</html>

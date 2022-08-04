@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title> Home | Kiwi Kingdom </title>
+	<meta name="author" content="student">
+	<meta name="description" content="A Website to promote a theme park">
+	<meta name="keywords" content="kiwi, kiwikingdom, theme, park, themepark">
+	<link rel="icon" href="kiwi-icon.png">
+	<link rel="stylesheet" href="themepark.css">
+</head>
+
+<body>
+	<div id="links">
+		<div id="link1" class="link_button"> <a href="front.html"> Home </a> </div>
+		<div id="link2" class="link_button"> <a href="rides.html"> Rides </a> </div>
+		<div id="link3" class="link_button"> <a href="prices.html"> Prices & Deals </a> </div>
+	</div>
+	
+	<div id="first-photo" class="background-section" style="background-image: url('kiwikingdom.jpg');  min-height: 650px;">
+		<div class="heading1"> Kiwi Kingdom </div>
+	</div>
+	
+	<div id="heading-text">
+	<img src="kiwi-icon.png" class="icon" width=200px height=200px>
+		<h1> Welcome to Kiwi Kingdom! </h1>
+	</div>
+	
+	<div id="carousel">
+		<img src="frontpage1.jpg" width="1423px" height="550px">
+	</div>
+	
+	<div id="main-text">
+		<h2> Kiwi Kingdom is New Zealand’s best theme park, giving you a mix of thrilling rides, entertaining shows, and lots of 
+		fun activities to do with your family and friends. </h2>
+	</div>
+	
+	<div id="side-by-side">
+		<div id="left-side">
+		<img src="reviews.jpg" height="500px" width="800px">
+		</div>
+		
+		<div id="right-side">
+			<h2> Why should you come to Kiwi Kingdom? Here’s some reviews from our guests: </h2>
+			<ul> 
+				<li> Jacky = “I love going on the Haunted House ride, nothing like a good scare to help you remember you’re alive!”☆☆☆☆☆ </li>
+				<li> Simon = “I proposed to my wife at Kiwi Kingdom and she said yes!”☆☆☆☆ </li>
+				<li> Bill = “It’s better than watching TV” ☆☆ </li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="second-photo" class="background-section">
+	</div>
+	
+	<div id="contact">
+		<h2> Contact us on phone: 027 223 8248 | Contact us by email: kiwikingdom@gmail.com | Come visit us: 837 Red Cardinal Rd </h2>
+	</div>
+
+<script>
+	setTimeout( function () {
+		document.getElementById("carousel").innerHTML = '<img src="frontpage2.jpg" width="1423px" height="550px">';
+	}, 6000);
+	setTimeout( function () {
+		document.getElementById("carousel").innerHTML = '<img src="frontpage3.jpg" width="1423px" height="550px">';
+	}, 12000);
+</script>
+</body>
+</html>
