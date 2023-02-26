@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	background-color: #ffb978;
+}
+#banner-img {
+	width: 100%;
+	height: 20%;
+}
+#main-heading {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#main-text {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#review-one {
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#review-one img {
+	width: 100%;
+}
+#review-two {
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#review-two img {
+	width: 100%;
+}
+p {
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	#banner-img {
+		width: 100%;
+		height: 30%;
+	}
+	#main-heading {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	#main-text {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	#review-one {
+		float: left;
+		width: 35%;
+		margin-left: 10%;
+		margin-right: 5%;
+	}
+	#review-one img {
+		width: 100%;
+	}
+	#review-two {
+		float: left;
+		width: 35%;
+		margin-left: 5%;
+		margin-right: 10%;
+	}
+	#review-two img {
+		width: 100%;
+	}
+	p {
+		font-size: 30px;
+	}
+}
+
