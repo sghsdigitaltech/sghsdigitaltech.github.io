@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title> Exercise 2.3 Example </title>
+	<style>
+		body {background-color: #ffbe76; margin: 10%;}
+		label, p { font-size: 16px;}
+	</style>
+</head>
+<body>
+	<h1> Life Story Simulator </h1>
+	<h2> Remember you want to try and make something this example without peeking at my code! </h2>
+	<h2> It doesn't need to look the same or work exactly the same, as long as it meets the description </h2>
+	<br>
+	<br>
+	<label for="person">Next Person </label>
+	<input type="text" id="new-person" name="person">
+	<button type="button" id="add-button">Add Person</button>
+	<br>
+	<p id="people-gap"> There aren't currently any people in the list.</p>
+	<br>
+	<button type="button" id="start-button">Start the Story</button>
+	<br>
+	<br>
+	<p id="story-gap"> </p>
+	
+
+</body>
+<script>
+	const people = []
+	
+	document.getElementById("add-button").addEventListener("click", addItem);
+	function addItem(){
+		people.push((document.getElementById("new-person").value))
+		document.getElementById("new-person").value = ""
+		document.getElementById("people-gap").innerHTML = "The people currently in the list are " + people;
+	}
+	
+	
+	document.getElementById("start-button").addEventListener("click", startStory);
+	function startStory(){
+		document.getElementById("story-gap").innerHTML += people[Math.floor(Math.random() * people.length)] + " has six pet cats. <br>";
+		document.getElementById("story-gap").innerHTML += people[Math.floor(Math.random() * people.length)] + " was a professional athlete until they hurt their knee. <br>";
+		document.getElementById("story-gap").innerHTML += people[Math.floor(Math.random() * people.length)] + " is running for mayor of their local town. <br>";
+		document.getElementById("story-gap").innerHTML += people[Math.floor(Math.random() * people.length)] + " has the world's largest collection of pencil sharpeners. <br>";
+		document.getElementById("story-gap").innerHTML += people[Math.floor(Math.random() * people.length)] + " runs a bookstore on the beach. <br>";		
+	}
+	
+
+</script>
