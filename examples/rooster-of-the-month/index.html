@@ -1,0 +1,51 @@
+<style>
+	body { 
+		margin: 0;
+	}	
+	#left-side {
+		background-color: #0652DD;
+		float: left;
+		height: 90%;
+		width: 40%;
+		padding: 5%;
+	}
+	
+	#right-side {
+		background-color: #12CBC4;
+		float: left;
+		height: 90%;
+		width: 40%;
+		padding: 5%;
+	}
+	
+	h1 {
+		font-size: 40px;
+	}
+	p	{
+		font-size: 20px;
+	}
+</style>
+
+<div id="left-side">
+	<img id="rooster-pic" src="rooster0.jpg" width="90%" height="90%">
+</div>
+<div id="right-side">
+	<h1> You should adopt: <span id="name">Mitchell</span> </h1>
+	<p id="description"> Mitchell is a kind sensitive rooster, who loves to spend time outside bathing in the sun. </p>
+</div>
+
+<script>
+var rooster = 0;
+const names = ["Mitchell", "Wyatt Chirp", "Liam Hensworth", "Keith Folley Chicken"]
+const descriptions = [	"Mitchell is a friendly and lazy rooster, who loves to spend time outside bathing in the sun.", 
+						"Wyatt is a bug hunting machine, he spends all his time trying to find backs in the yard.", 
+						"Liam is kind and compassionate rooster who occassionally gets picked on by his more successful brothers.", 
+						"Keith is recommended only for skilled animal handlers. He is highly intelligent and we are worried about what he is trying to do."]
+setInterval(function() {
+		rooster = (rooster+1)%4;
+		document.getElementById("rooster-pic").src = "rooster" + rooster + ".jpg";
+		document.getElementById("name").innerHTML = names[rooster];
+		document.getElementById("description").innerHTML = descriptions[rooster];
+	}, 8000);
+	
+</script>
