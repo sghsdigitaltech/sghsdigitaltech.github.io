@@ -1,0 +1,49 @@
+<html>
+
+<head>
+	<style>
+		body {
+			text-align: center;
+			font-size: 30px;
+			margin-top: 20%;
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+		h1 {
+			font-size: 80px;
+		}
+	
+	
+	</style>
+</head>
+
+<body>
+
+	<div id="everything">
+		<p> Type in the name of the person you want to congratulate </p>
+		<button type="button" id="saveButton">Save Name</button>
+		<input type="text" id="nameInput">
+		<p> Current person = <span id="name-spot"> BLANK </span> </p>
+		<button type="button" id="makeButton">Generate Certificate</button>
+	</div>
+	
+</body>
+
+<script>
+
+	document.getElementById("saveButton").addEventListener("click", saveName);
+	function saveName(){
+		var temp = document.getElementById("nameInput").value		//Why do you think this is called temp? Its not short for temperature!
+		localStorage.setItem("name", temp);
+		document.getElementById("name-spot").innerHTML = temp
+	}
+
+	document.getElementById("makeButton").addEventListener("click", makeCertificate);
+	function makeCertificate(){
+		var personsName = localStorage.getItem("name");
+		document.getElementById("everything").innerHTML = "<h1> Congrats to " + personsName + ". <br><br> You did an amazing job.</h1>"
+	}
+</script>
+
+
+</html>
