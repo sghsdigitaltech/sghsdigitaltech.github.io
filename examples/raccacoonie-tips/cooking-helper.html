@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title> Raccacoonie's Cooking Helper </title>
+	<style>
+		body{text-align: center; margin: 0;}
+		#left-side{background-color: #ff6b81; float: left; width: 40%; height: 100%; padding: 5%;}
+		#right-side{background-color: #ff4757; float: left; width: 40%; height: 100%; padding: 5%;}
+		#right-side img {width: 100%; border-radius: 20%;}
+	</style>
+</head>
+<body>
+	<div id="left-side">
+		<h1> Raccacoonie's Cooking Helper </h1>
+		<h2> Raccacoonie's Suggested Meal of the Day: <span id="tip-text"></span> </h2>
+		
+		
+		<h3> Kommon Kitchen Konversions </h3>
+		<label for="ounces">Ounces: </label>
+		<input type="text" id="input-ounces" name="ounces">
+		<button type="button" id="ounces-button">Convert Ounces to Grams</button>
+		<p id="grams-text"></p>
+		<br> <br> <br>
+		<label for="gallons">Gallons: </label>
+		<input type="text" id="input-gallons" name="gallons">
+		<button type="button" id="gallons-button">Convert Gallons to Litres</button>
+		<br> <br> <br>
+		
+		
+	</div>
+	<div id="right-side">
+		<img src="pic1.webp">
+	</div>
+	
+</body>
+<script>
+document.getElementById("ounces-button").addEventListener("click", convertOunces);
+	function convertOunces() {
+		var ounces = document.getElementById("input-ounces").value;
+		var grams = ounces*28.3495;
+		document.getElementById("grams-text").innerHTML = ounces + " ounces is " + grams +" grams";
+	} 
+</script>
+
+
+</html>
